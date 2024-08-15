@@ -139,7 +139,12 @@
       margin-right:20px;
       margin-bottom: 20px;
     }
-
+    
+    .band-header {
+ 	 text-align: left;
+	  background-color: #468863;
+	}
+	  
     .line-break {
       clear:both;
     }
@@ -239,25 +244,28 @@
 </head>
 <body>
 
+<div class="band-header">
+  <header class="site-header">
+    <h1>Poet, Scientist, Philosopher</h1>
+    <img src="images/thomas-doerksen-portrait.png" align="right">
+  </header>
+</div>
+
 <header>	
-		<div id="topHeader">
+	<div id="topHeader">
+		<h2 id="slogan">Poet, Scientist, Philosopher</h2>		
+	</div>
+	
+	<div id="banner">
 			<div class="container">
-				<div class="sixteen columns over">
-					<a id="logo" href="https://thomasdoerksen.ca" title="Home"></a>
-					<h1 id="title"></h1>
-					<h2 id="slogan">Poet, Scientist, Philosopher</h2>
-				</div><!-- header-inner -->
-			</div><!-- end container -->
-		</div><!--end pageHeader-->
-		<div id="banner">
-			<div class="container">
-					<img src="images/thomas-doerksen-portrait.png" alt="" class="scale-with-grid banner1" style="display: block;">
-					<!-- #camera_wrap_1 -->		
-			        <!-- #camera_wrap_1 -->	
+		
+		<img src="images/thomas-doerksen-portrait.png" alt="" class="scale-with-grid banner1" style="display: block;">
+
 		       	 <div id="extraContainer1"></div>
 			</div><!-- end container -->
-		</div><!-- end banner -->
-		<div id="bttmHeader-sticky-wrapper" class="sticky-wrapper" style="height: 61px;"><div id="bttmHeader">
+	</div>
+		
+	<div id="bttmHeader-sticky-wrapper" class="sticky-wrapper" style="height: 61px;"><div id="bttmHeader">
 			<div class="container">
 				<div class="sixteen columns over">
 				<nav><ul class="nojs sf-js-enabled sf-shadow"><li><a href="publications/index.html" rel="">PUBLICATIONS</a></li><li><a href="life/index.html" rel="">LIFE</a></li><li><a href="contact/index.html" rel="">CONTACT</a></li></ul></nav>
@@ -266,8 +274,8 @@
 					</div><!-- end skiptonav -->
 				</div><!-- header-inner -->
 			</div><!-- end container -->	
-		</div></div><!--end pageHeader-->
-	</header>
+	</div></div><!--end pageHeader-->
+</header>
 
   
   <h1>Thomas Doerksen</h1>
