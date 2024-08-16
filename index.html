@@ -191,6 +191,7 @@
     .band-header>header {
 	 margin-left: -20px;
 	    margin-right: -20px;
+	    margin-top: -20px;
  	 height: 300px;
  	 display: flex;
 	 background-color: #468863;
@@ -293,6 +294,29 @@
       margin-bottom:20px;
 	    padding: 10px; border: 2px solid green; border-radius: 10px;
     }
+
+	.bottom-header>header {
+	 margin-left: -20px;
+	    margin-right: -20px;
+	    margin-bottom: -20px;
+ 	 height: 50px;
+ 	 display: flex;
+	 background-color: #468863;
+  justify-content: space-between;
+}
+
+	.bottom-header>header h1 {
+  color: white;
+  font-size: 10px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+  text-align: center;
+  align-self: flex-middle; 
+}
 
     .roboto-thin {
       font-family: "Roboto", sans-serif;
@@ -451,5 +475,12 @@
 
 <p2 class="line-break">Contact</p2>
 <p class="contact">You can email Thomas <a href="mailto:tomdoerksen@gmail.com">HERE</a></p>
+
+<div class="bottom-header">
+  <header class="bottom-header">
+	  <h1 text-align: center; vertical-align: middle;> © 2024, Thomas Doerksen</h1>
+  </header>
+</div>
+	
 </body>
 </html>
