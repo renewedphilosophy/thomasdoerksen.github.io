@@ -214,12 +214,23 @@
     1px 1px 0 #000;
   margin-left: 40px;
   margin-top: 40px;
-  align-self: flex-start; /* put it at the top */
 }
 
 .band-header>header img {
- 
-  align-self: flex-start; /* put it at the top */
+ float: right;
+}
+
+  @media screen and (max-width: 500px) {
+  .band-header>header h1{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .band-header>header img {
+    float: none;
+	  clear:both;
+  }
 }
 
 	  
