@@ -93,6 +93,8 @@
 	     text-decoration: none;
     }
 
+	div.content { max-width: 960px }
+	  
     body {
       font-family: "Gill Sans", "Helvetica", sans-serif;
       font-size: 14pt;
@@ -186,7 +188,6 @@
 	 margin-left: -20px;
 	    margin-right: -20px;
 	    margin-top: -20px;
- 	 height: 300px;
  	 display: flex;
 	 background-color: #468863;
   justify-content: space-between;
@@ -228,7 +229,6 @@
     }
 
 	   .publications {
-      float:left;
 		   margin-left:40px;
       height:170px;
       width:200px;
@@ -237,7 +237,6 @@
 	  
     }
 	     .publications2 {
-      float:left;
 		     margin-left:40px;
       height:130px;
       width:200px;
@@ -246,7 +245,6 @@
 	  
     }
 	     .publications-image {
-      float:left;
 		     margin-left:40px;
       height:170px;
       width:auto;
@@ -318,6 +316,44 @@
     1px 1px 0 #000;
 margin-left: 40px;
 }
+
+ @media screen and (max-width: 1000px) {
+
+	   .band-header>header {
+ 	 height: 300px;
+	   }
+	 
+	  .band-header>header h1 {
+  margin-left: 20px;
+  margin-top: 125px;
+  text-align: center;
+ 
+}
+	  
+.band-header>header h2 {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+	  .band-header>header img {
+    float: right;
+  }
+	   .publications {
+		    float:left;
+	   }
+	  .publications2 {
+		    float:left;
+	   }
+	  .publications-image {
+		   float:left;
+	   }
+	  .h2 {
+		    float:left;
+	   }
+	   .h3 {
+		    float:left;
+	   }
+ }
+	 
 
 
   @media screen and (max-width: 500px) {
@@ -435,6 +471,7 @@ margin-left: 40px;
   </style>
 </head>
 <body>
+	<div class="content">
 
 <div class="band-header">
   <header class="site-header">
@@ -521,6 +558,8 @@ margin-left: 40px;
   <header class="footer";>
 	  <h1 text-align: center; vertical-align: middle;> © 2024, Thomas Doerksen</h1>
   </header>
+</div>
+
 </div>
 	
 </body>
