@@ -83,76 +83,73 @@
    }
   </script>
   <style>
-    a {
+a {
       color:darkgreen;
 	    text-decoration: none;
     }
 
-    a:hover {
+a:hover {
        text-shadow:0px 0px 1px darkgreen;
 	     text-decoration: none;
-    }
+}
 
-	div.content { max-width: 1200px; margin: 0 auto; }
+div.content { max-width: 1200px; margin: 0 auto; 
+}
 	  
-    body {
+body {
       font-family: "Gill Sans", "Helvetica", sans-serif;
       font-size: 14pt;
 	    background: url("images/leaf-background3.png");
 	    background-position: left top;
  	    background-repeat: repeat;
 	    background-size: 500px;	
-	    min-width: 170px
-    }
+	    min-width: 170px 
+}
 
-    h1 {
+h1 {
 	     clear:both;
-	    display: flex;
 	    width: fit-content;
-    }
+}
 
-    h2 {
-     clear:both;
+h2 {
+      clear:both;
       padding: 10px;  border: 2px black; border-radius: 10px;
-	height: 30px;
- 	display: flex;
-	background-color: #468863;
+	    height: 30px;
+	    background-color: #468863;
 	    font-size: 20pt; color: white; text-shadow:
 	    -1px -1px 0 #000,
 	    1px -1px 0 #000,
 	    -1px 1px 0 #000,
 	    1px 1px 0 #000;
-    }
+}
 
-    h3 {
-    clear:both;
+h3 {
+      clear:both;
       padding: 10px;  border: 2px black; border-radius: 10px;
-	height: 30px;
- 	display: flex;
-	background-color: #8fc998;
-	    font-size: 20pt; color: black;
+	    height: 25px;
+	    background-color: #8fc998;
+	    font-size: 15pt; color: black;
 	    text-shadow:
 	    -1px -1px 0 #ffffff,
 	    1px -1px 0 #ffffff,
 	    -1px 1px 0 #ffffff,
-	    1px 1px 0 #ffffff;
-	   
-    }  
+	    1px 1px 0 #ffffff;	   
+}  
 
-	  .flex-container {
+.flex-container {
  	 display: flex;
   	flex-wrap: wrap;
   	align-content: space-between;
-	}
+}
 
-	    .flex-container2 {
+.flex-container2 {
 		     display: flex;
   		flex-wrap: wrap;
 		    align-content: space-between;
 		
-	}
+}
 
-	  .author-description {
+.author-description {
 	 clear:both;
 	margin-right: 50px;
   	    margin-left: 50px;
@@ -162,7 +159,7 @@
 	  }
 
 	  
-    .band-header>header {
+.band-header>header {
  	 display: flex;
 	 background-color: #468863;
   justify-content: space-between;
@@ -190,8 +187,6 @@
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-	text-align: justify;
-	width: fit-content;
 }
 
 .band-header>header img {
@@ -199,12 +194,12 @@
       height:300px;
 }
 	  
-    .line-break {
+.line-break {
       clear:both;
 	width: fit-content;
     }
 
-	   .boxes {
+.boxes {
 	  margin-left:40px;
       height:auto;
       width:200px;
@@ -213,19 +208,19 @@
 	  
     }
 	  
-	     .boxes-image {
+.boxes-image {
 		     margin-left:40px;
       height:170px;
       width:auto;
 	border: 2px solid green; border-radius: 10px;
     }
 
-	  .boxes-image:hover {
+.boxes-image:hover {
       filter: invert(100%);
 	  }
 
 
-    .socials-icon {
+.socials-icon {
       float:left;
       margin-right:5px;
 	        margin-top:10px;
@@ -238,11 +233,11 @@
 	    
     }
 
-    .socials-icon:hover {
+.socials-icon:hover {
       filter: invert(100%);
     }
 
-     .contact {
+.contact {
       float:left;
 	margin-right:5px;
 	         margin-top:10px;
@@ -255,7 +250,7 @@
 	     text-align: center;
      }
 
-	.footer>header {
+.footer>header {
  	 height: 50px;
  	 display: flex;
 	 background-color: #468863;
@@ -279,113 +274,84 @@ margin-left: 40px;
 	   .band-header>header {
  	 height: 300px;
 	   }
+     .band-header>header h4 {
+  margin-left: 40px;
+  margin-top: 40px;
+	width: fit-content;
+}
 	  .band-header>header h1 {
   margin-top: 125px;
   text-align: center;
 		  width: fit-content;
 }
-	  
-.band-header>header h4 {
-  margin-left: 40px;
-  margin-top: 40px;
-	width: fit-content;
-}
-	  .band-header>header img {
-		
-  }
 	
 	   .boxes {
-		    align:left;
+		    float:left;
 	   }
 	  .boxes-image {
-		  align:left;
+		 float:left;
 	   }
-	  .h2 {
-		    align:left;
+	  h2 {
+		    float:left;
 		  margin-top:10px;
 	    margin-left: 30px;
 	   }
-	   .h3 {
-		   align:left;
+	   h3 {
+		   float:left;
 	margin-top:10px;
 	    margin-left:50px;
 	   }
  }
 	  
- @media screen and (max-width: 1200px) {
 
-	   .band-header>header {
- 	 height: 300px;
-	   }
-	  .band-header>header h1 {
-  margin-top: 125px;
-  text-align: center;
-		  width: fit-content;
-		  text-align: fit-content;
-} 
-.band-header>header h4 {
-  margin-left: 40px;
-  margin-top: 40px;
-	width: fit-content;
-	text-align: fit-content;
-}
-	  .band-header>header img {
-		
+ @media screen and (max-width: 600px) {
+	  
+	  .band-header>header h4{
+		 margin-left:20px;
+      margin-top: 20px;
   }
-	   .boxes {
-		    align:left;
+  .band-header>header h1{
+		  margin:0;
+      clear:both;
+		  
+  }
+	  h2 {
+		float:center;
 	   }
-	  .boxes-image {
-		    align:left;
+	   h3 {
+		float:center;
 	   }
-	  .h2 {
-		    align:left;
-		  margin-top:10px;
-	    margin-left: 30px;
-	   }
-	   .h3 {
-		    align:left;
-	margin-top:10px;
-	    margin-left:50px;
-	   }
- }
+}
+
 	 
 
   @media screen and (max-width: 500px) {
  .band-header>header {
 	 height: 400px
-	
  }
-	  .band-header>header h1{
-    text-align: center;
-		  margin:0;
-		  width: fit-content;
-  }
 	  .band-header>header h4{
 	margin: 0;
-    text-align: center;
-		  margin-top: 20px:
-		  margin-bottom: 20px;
+    float: center;
+		  width: fit-content;
+  }
+  .band-header>header h1{
+    margin:0;
+    clear:left;
+      float: center;
 		  width: fit-content;
   }
   .band-header>header img {
-	     align:bottom;
+	clear:both;
+  float:middle;
   }
-	   .boxes {
+	   
+	  h2 {
+		float:center;
+		
+	   }
+	   h3 {
+		float:center;
 		 
-		   align:center;
-	   }
-	  .boxes-image {
-		
-		  align:center;
-	   }
-	  .h2 {
-		
-		  align:center;
-	   }
-	   .h3 {
-		
-		   align:center;
 	   }
 }
 
@@ -471,11 +437,11 @@ margin-left: 40px;
 
 <div class="band-header">
 		   <header class="band-header">
-			   <div class="flex-container2">
-		<div><h4 class="header">Poet, Scientist, Philosopher</h4></div>
-	        <div><h1 class="header">Thomas Doerksen</h1></div>
-  	        <div><img style="align:right;" src="images/thomas-doerksen-portrait.png"></div>   
-	</div>
+        
+		<h4 class="header">Poet, Scientist, Philosopher</h4>
+	        <h1 class="header">Thomas Doerksen</h1>
+  	        <img style="align:right;" src="images/thomas-doerksen-portrait.png">  
+	
 			     </header>
 </div>
  
