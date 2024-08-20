@@ -106,13 +106,7 @@ body {
 	    min-width: 170px 
 }
 
-h1 {
-	     clear:both;
-	    width: fit-content;
-}
-
 h2 {
-      clear:both;
       padding: 10px;  border: 2px black; border-radius: 10px;
 	    height: 30px;
 	    background-color: #468863;
@@ -124,7 +118,6 @@ h2 {
 }
 
 h3 {
-      clear:both;
       padding: 10px;  border: 2px black; border-radius: 10px;
 	    height: 25px;
 	    background-color: #8fc998;
@@ -137,16 +130,10 @@ h3 {
 }  
 
 .flex-container {
- 	 display: flex;
+ 	clear:both;
+  display: flex;
   	flex-wrap: wrap;
-  	align-content: space-between;
-}
-
-.flex-container2 {
-		     display: flex;
-  		flex-wrap: wrap;
-		    align-content: space-between;
-		
+  	align-content:space-between;
 }
 
 .author-description {
@@ -156,7 +143,7 @@ h3 {
       padding: 10px; border: 2px solid green; border-radius: 10px;
 	    background-color: lightgrey;
 	    width: fit-content;
-	  }
+}
 
 	  
 .band-header>header {
@@ -174,9 +161,6 @@ h3 {
     2px -2px 0 #000,
     -2px 2px 0 #000,
     2px 2px 0 #000;
-  text-align: center;
-	text-align: justify;
-	width: fit-content;
 }
 	  
 .band-header>header h4 {
@@ -197,27 +181,26 @@ h3 {
 .line-break {
       clear:both;
 	width: fit-content;
-    }
+}
 
 .boxes {
-	  margin-left:40px;
+  margin-left:40px;
       height:auto;
       width:200px;
 	 background-color: lightgrey;
-	padding: 10px; border: 2px solid green; border-radius: 10px;
-	  
-    }
+	padding: 10px; border: 2px solid green; border-radius: 10px;	  
+}
 	  
 .boxes-image {
 		     margin-left:40px;
       height:170px;
       width:auto;
 	border: 2px solid green; border-radius: 10px;
-    }
+}
 
 .boxes-image:hover {
       filter: invert(100%);
-	  }
+}
 
 
 .socials-icon {
@@ -230,12 +213,11 @@ h3 {
       width:50px;
 	    background-color: lightgrey;
 	    border: 2px solid green; border-radius: 10px;
-	    
-    }
+}
 
 .socials-icon:hover {
       filter: invert(100%);
-    }
+}
 
 .contact {
       float:left;
@@ -248,7 +230,7 @@ h3 {
 	 background-color: lightgrey;
 	     padding: 10px; border: 2px solid green; border-radius: 10px;
 	     text-align: center;
-     }
+}
 
 .footer>header {
  	 height: 50px;
@@ -258,7 +240,7 @@ h3 {
 		clear:both;
 }
 
-	.footer>header h1 {
+.footer>header h1 {
   color: white;
   font-size: 20px;
 	text-shadow:
@@ -269,7 +251,7 @@ h3 {
 margin-left: 40px;
 }
 
- @media screen and (max-width: 5000px) {
+@media screen and (max-width: 5000px) {
 
 	   .band-header>header {
  	 height: 300px;
@@ -284,7 +266,6 @@ margin-left: 40px;
   text-align: center;
 		  width: fit-content;
 }
-	
 	   .boxes {
 		    float:left;
 	   }
@@ -301,11 +282,10 @@ margin-left: 40px;
 	margin-top:10px;
 	    margin-left:50px;
 	   }
- }
+}
 	  
 
- @media screen and (max-width: 600px) {
-	  
+@media screen and (max-width: 600px) {
 	  .band-header>header h4{
 		 margin-left:20px;
       margin-top: 20px;
@@ -313,7 +293,6 @@ margin-left: 40px;
   .band-header>header h1{
 		  margin:0;
       clear:both;
-		  
   }
 	  h2 {
 		float:center;
@@ -325,7 +304,7 @@ margin-left: 40px;
 
 	 
 
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
  .band-header>header {
 	 height: 400px
  }
@@ -343,22 +322,19 @@ margin-left: 40px;
   .band-header>header img {
 	clear:both;
   float:middle;
-  }
-	   
-	  h2 {
+}   
+h2 {
 		float:center;
-		
 	   }
-	   h3 {
+h3 {
 		float:center;
-		 
 	   }
 }
 
 
 	  
 
-    .roboto-thin {
+.roboto-thin {
       font-family: "Roboto", sans-serif;
       font-weight: 100;
       font-style: normal;
@@ -437,33 +413,30 @@ margin-left: 40px;
 
 <div class="band-header">
 		   <header class="band-header">
-        
-		<h4 class="header">Poet, Scientist, Philosopher</h4>
-	        <h1 class="header">Thomas Doerksen</h1>
-  	        <img style="align:right;" src="images/thomas-doerksen-portrait.png">  
-	
+		  <h4 class="header">Poet, Philosopher, Scientist</h4>
+	        <h1 class="header" style="clear:both;">Thomas Doerksen</h1>
+  	    <img style="align:right;" src="images/thomas-doerksen-portrait.png"> 
+   
 			     </header>
 </div>
  
-  <p class="author-description">Thomas has a PhD in Theory and Criticism (Western), a Masters in philosophy (Guelph), and a Masters in synthetic organic chemistry (Victoria). He lives in Victoria, BC.</p>
+<p class="author-description">Thomas has a PhD in Theory and Criticism (Western), a Masters in philosophy (Guelph), and a Masters in synthetic organic chemistry (Victoria). He lives in Victoria, BC.</p>
 
-  <h2 class="line-break">Publications</h2>
+<h2 class="line-break">Publications</h2>
 
 	
-  <h3 class="line-break">Poetry</h3>
-  
-	    <div class="flex-container">
+<h3 class="line-break">Poetry</h3>
+<div class="flex-container">
 	 	<div><p class="boxes" > &ldquo;The Dragon&rsquo;s Tail, The Open Box,&rdquo;, &ldquo;Time Taking,&rdquo; &ldquo;The Master&rdquo;, &ldquo;White Night&rdquo; in<br> 
 	    <a href="https://jlrbpress.ca/holes"><i>Holes: An Anthology of Poems about Depths, Darkness, and Desire</i></a>,<br>
 			JLRB Press 
 		</p></div>
 		   <div> <a href="https://jlrbpress.ca/holes"><img class="boxes-image" src="images/holes-anthology.webp" alt="Holes Anthology Cover" width="86" height="130"></a></div>
-	    </div>
+</div>
   
 
-  <h3 class="line-break">Philosophy</h3>
-
-	<div class="flex-container">
+<h3 class="line-break">Philosophy</h3>
+<div class="flex-container">
 	<div> <p class="boxes" >
     	  <a href="https://ir.lib.uwo.ca/etd/9664/"><i>The Forgetting of Fire: An Archaeology of Technics</i></a>,<br>
 		 2023, University of Western Ontario
@@ -475,12 +448,11 @@ margin-left: 40px;
 			    2018, University of Guelph
 		    </p></div>
        <div><a href="https://atrium.lib.uoguelph.ca/items/065c40af-3371-4ad4-9087-70a0e942b3cb"><img class="boxes-image" src="images/assemblages-and-their-tendencies.png" alt="Assemblages and their Tendencies" width="328" height="230"></a></div>
-	    </div>
+</div>
    
   
-  <h3 class="line-break">Science</h3>
-
-	        <div class="flex-container">
+<h3 class="line-break">Science</h3>
+<div class="flex-container">
 		    <div><p class="boxes" >
       <a href="https://journals.asm.org/doi/10.1128/spectrum.00973-23">&ldquo;Characterization of Bacteriophage cd2&rdquo;</a>,<br>
 			    2023, <i>Spectrum</i>
@@ -498,25 +470,25 @@ margin-left: 40px;
 			    2016, University of Victoria
 			    </p></div>
      <div> <a href="https://dspace.library.uvic.ca/items/d805e078-d22e-4c9d-8ff2-0d366f90d053"><img class="boxes-image" src="images/methylthioadenosine-analogue.png" alt="Methylthioadenosine analogue" width="112" height="94"></a></div>
-			</div>
+</div>
 
 
-  <h2 class="line-break">Performances</h2>
-  
-	<p class="boxes">
+<h2 class="line-break">Performances</h2>
+<p class="boxes" style="clear:both;">
       <strong>January 2024</strong><br>
       Planet Earth Poetry<br>
       &ldquo;Time Taking&rdquo;<br>
-      Victoria, British Columbia</p>
+      Victoria, British Columbia
+</p>
    
 
-  <h2 class="line-break">Media & Contact</h2>
-  <div class="flex-container">
+<h2 class="line-break">Media & Contact</h2>
+<div class="flex-container">
    <div> <a href="https://www.linkedin.com/in/thomas-doerksen/"><img src="images/icons-linkedin.png"  alt="LinkedIn icon" class="socials-icon"></a></div>
     <div><a href="https://www.instagram.com/thomasdoerksen/"><img src="images/icons-instagram.png" alt="Instagram icon" class="socials-icon"></a></div>
     <div><a href="https://www.facebook.com/profile.php?id=100084053806661"><img src="images/icons-facebook.png" alt="Facebook icon" class="socials-icon"></a></div>
 	<div><p class="contact">You can email Thomas <a href="mailto:tomdoerksen@gmail.com">HERE</a></p></div>
-  </div>
+</div>
 
 <div class="footer">
   <header class="footer";>
