@@ -145,6 +145,11 @@ h3 {
 	    width: fit-content;
 }
 
+.wrapper{
+  width:100%;
+  text-align:center;
+}
+
 	  
 .band-header>header {
  	 display: flex;
@@ -184,7 +189,6 @@ h3 {
 }
 
 .boxes {
-  margin-left:40px;
       height:auto;
       width:200px;
 	 background-color: lightgrey;
@@ -192,7 +196,6 @@ h3 {
 }
 	  
 .boxes-image {
-		     margin-left:40px;
       height:170px;
       width:auto;
 	border: 2px solid green; border-radius: 10px;
@@ -263,22 +266,20 @@ margin-left: 40px;
 }
 	  .band-header>header h1 {
   margin-top: 125px;
-  text-align: center;
+ 
 		  width: fit-content;
 }
-	   .boxes {
-		    float:left;
-	   }
-	  .boxes-image {
-		 float:left;
-	   }
+    .boxes{
+      margin-left:40px;
+    }
+    .boxes-image{
+      margin-left:40px;
+    }
 	  h2 {
-		    float:left;
 		  margin-top:10px;
 	    margin-left: 30px;
 	   }
 	   h3 {
-		   float:left;
 	margin-top:10px;
 	    margin-left:50px;
 	   }
@@ -293,43 +294,51 @@ margin-left: 40px;
   .band-header>header h1{
 		  margin:0;
       clear:both;
+      margin-top:190px;
+      margin-left:-120px;
   }
+    .boxes{
+      margin: 0 auto
+  
+    }
+    .boxes-image{
+      margin: 0 auto
+   
+    }
 	  h2 {
-		float:center;
+		margin: 0 auto;
+    margin-bottom:10px;
+    margin-top:10px;
 	   }
 	   h3 {
-		float:center;
+		margin: 0 auto;
+    margin-bottom:10px;
+    margin-top:10px;
 	   }
+     .flex-container{
+      justify-content:space-around;
+     }
 }
-
-	 
 
 @media screen and (max-width: 500px) {
- .band-header>header {
-	 height: 400px
- }
-	  .band-header>header h4{
-	margin: 0;
-    float: center;
-		  width: fit-content;
-  }
   .band-header>header h1{
-    margin:0;
-    clear:left;
-      float: center;
-		  width: fit-content;
-  }
-  .band-header>header img {
-	clear:both;
-  float:middle;
-}   
-h2 {
-		float:center;
-	   }
-h3 {
-		float:center;
-	   }
+    font-size:30px;
 }
+}
+	 
+@media screen and (max-width: 400px) {
+  .band-header>header h4{
+    font-size:15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+  .band-header>header h1{
+    font-size:20px;
+    margin-left:-80px;
+    margin-top: 230px
+}
+}
+
 
 
 	  
@@ -411,14 +420,15 @@ h3 {
 <body>
 	<div class="content">
 
+
 <div class="band-header">
-		   <header class="band-header">
-		  <h4 class="header">Poet, Philosopher, Scientist</h4>
+  <header class="band-header">
+		  <h4 class="header">Poet,<br> Philosopher,<br> Scientist</h4>
 	        <h1 class="header" style="clear:both;">Thomas Doerksen</h1>
-  	    <img style="align:right;" src="images/thomas-doerksen-portrait.png"> 
-   
-			     </header>
+  	    <img style="float:right;" src="images/thomas-doerksen-portrait.png"> 
+      </header>
 </div>
+
  
 <p class="author-description">Thomas has a PhD in Theory and Criticism (Western), a Masters in philosophy (Guelph), and a Masters in synthetic organic chemistry (Victoria). He lives in Victoria, BC.</p>
 
